@@ -1,0 +1,70 @@
+@keyframes slideDownFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  z-index: 1000; /* Asegura que esté por encima del carrusel */
+  animation: slideDownFadeIn 3s ease-out forwards; /* Animación */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-other ul {
+  border-bottom: 4px solid #56070c; /* Línea continua debajo de las opciones del navbar en todas las páginas excepto la de inicio */
+}
+
+.navbar li {
+  margin: 0 1.5rem;
+}
+
+.navbar li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: 'Arial', sans-serif; /* Fuente profesional */
+  
+}
+
+.navbar li a:hover {
+  color: #56070c; /* Color de hover */
+  transform: scale(1.1); /* Aumenta el tamaño de las letras al hacer hover */
+  
+}
+
+.navbar li a.active {
+  color: #56070c; /* Color de enlace activo */
+  text-shadow: 1px 1px 1px #000000, 0 0 1em #ffffff, 0 0 0.4em #ffffff; /* Sombra para dar borde blanco */
+  
+}
+
+.navbar-logo img {
+  position: fixed;
+  width: 250px; /* Ajusta el ancho del logotipo */
+  height: auto; /* Mantén la proporción del logotipo */
+  margin-left: 1rem; /* Espacio a la izquierda del logotipo */
+  top: -195%;
+  left: 88px;
+
+}

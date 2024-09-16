@@ -1,0 +1,90 @@
+/* Carousel.css */
+.carousel {
+  position: absolute;
+  width: 100vw; /* Ancho completo del viewport */
+  height: 100vh; /* Alto completo del viewport */
+  overflow: hidden; /* Ocultar el overflow */
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Para permitir la posición absoluta del contenido */
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra toda el área */
+  animation: zoomAnimation 40s infinite;
+  transform-origin: top; /* El zoom se realiza desde la parte superior de la imagen */
+}
+
+.carousel-content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-title {
+  font-size: 3rem;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.carousel-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-text {
+  font-size: 1.5rem;
+  margin: 1rem 0 0;
+  margin-top: 200px;
+}
+
+/* Estilos para la transición de texto */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2.1);
+  }
+}
+

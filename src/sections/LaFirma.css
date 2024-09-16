@@ -1,0 +1,165 @@
+/* LaFirma.css */
+.lafirma-container {
+  padding-top: 2rem;
+  margin-top: 15%;
+}
+
+.lafirma-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #003366; /* Color del título */
+}
+
+.lafirma-nav-container {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  padding: 1rem;
+  margin-bottom: rem;
+  border-radius: 10px;
+  width: 84%; /* Ajustar el tamaño del contenedor */
+  left: 80px;
+  border: 2px solid #56070c; /* Añadir borde */
+}
+
+.lafirma-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.lafirma-nav-button {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.lafirma-nav-button:hover,
+.lafirma-nav-button.active {
+  color: #56070c; /* Color al hacer hover o cuando está activo */
+  border-bottom: 2px solid #56070c; /* Subrayado del mismo color */
+  font-weight: bold;
+}
+
+.lafirma-content {
+  position: fixed; /* Cambiar a relative para manejar overflow */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 10%;
+  margin-top: 80px;
+  border: 2px solid #56070c; /* Añadir borde */
+  width: 84%; /* Ajustar el tamaño del contenedor */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+  height: 500px;
+}
+
+.lafirma-content-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.lafirma-section {
+  margin-bottom: 4rem;
+}
+
+.lafirma-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* O cualquier tamaño máximo deseado */
+  object-fit: contain; /* Ajusta la imagen para que se ajuste dentro del cuadro */
+  margin-left: 10px; /* Separación desde el borde izquierdo */
+}
+
+/* .lafirma-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+
+
+.lafirma-text p {
+  margin-top: 2%;
+  color: #000000; /* Color del texto */
+  line-height: 2.0;
+  margin-left: -12%;
+}
+.lafirma-text h5 {
+  line-height: 2.0;
+  margin-left: -12%;
+
+}
+
+
+/* Clases de animación de telón */
+.curtain-enter {
+  position: absolute; /* Asegurar que se mantenga dentro del contenedor */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+.curtain-enter-active {
+  transform: translateX(0);
+  transition: transform 500ms;
+}
+
+.curtain-exit {
+  position: relative; /* Asegurar que se mantenga dentro del contenedor */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+}
+
+.curtain-exit-active {
+  transform: translateX(100%);
+  transition: transform 500ms;
+}
+.divider {
+  position: fixed;
+  width: 2px; /* Grosor de la barra */
+  background-color: #56070c; /* Color de la barra */
+  height: 30%; /* Altura completa del contenedor */
+  margin: 0 auto; /* Centrarse verticalmente */
+top: 50%;
+left: 27%;
+}
+
+.lafirma-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.lafirma-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lafirma-text p {
+  margin-top: 2%;
+  color: #000000;
+  line-height: 1.7;
+  margin-left: -21%;
+}
+
+.lafirma-text h5 {
+  line-height: 2.0;
+  margin-left: -21%;
+}
+.lafirma-text h6 {
+  line-height: 2.0;
+  margin-left: -21%;
+}
+
+

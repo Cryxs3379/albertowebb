@@ -1,0 +1,32 @@
+/* AreaClientes.css */
+/* AreaClientes.css */
+.login-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    top: 28%;
+    right: 15%;
+    
+
+    
+  }
+  
+  .login-container.fade-in {
+    opacity: 1;
+    
+  }
+  
+  .login-container .MuiBox-root {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #56070c; /* Añadir borde */
+   
+  }
+  

@@ -1,0 +1,71 @@
+.cases-container {
+  position: fixed;
+  left: 19%;
+  top: 10%;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.titles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centra verticalmente */
+  height: 100%; /* Para centrar completamente */
+}
+
+.title {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: #56070c; /* Color al hacer hover */
+}
+
+.title1 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+.title2 {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+}
+
+.title3 {
+  position: absolute;
+  top: 40%;
+  left: 57%;
+}
+
+.page-container {
+  width: 60%;
+  height: 60%;
+  transition: opacity 0.5s, transform 0.5s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex; /* Dividir el contenedor en dos */
+}
+
+.page-half {
+  flex: 1;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page-half.fade-in {
+  opacity: 1;
+}
+

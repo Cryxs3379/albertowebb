@@ -1,0 +1,42 @@
+/* Contenedor principal */
+.cases-container {
+  padding: 20px;
+}
+
+/* Contenedor de títulos y descripciones */
+.titles-container {
+  width: 100%;
+}
+
+/* Contenedor para el título y la descripción del artículo 1 */
+.box1 {
+  position: fixed;
+  text-align: left;
+  color: #000000;
+  top: 33%;
+  left: 34%;
+  
+}
+
+/* Contenedor para el título y la descripción del artículo 2 */
+.box2 {
+  position: fixed;
+  text-align: left;
+  color: #000000;
+  top: 43%;
+  left: 34%;
+}
+
+/* Contenedor para el título y la descripción del artículo 3 */
+.box3 {
+  position: fixed;
+  text-align: left;
+  color: #000000;
+  top: 53%;
+  left: 34%;
+}
+
+/* Efecto hover */
+.title-box:hover {
+  color: #8b0000; /* Cambia de color al pasar el mouse */
+}
